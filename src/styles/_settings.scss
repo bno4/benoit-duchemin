@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+$color-txt: #222222;
+$color1: #48aaad;
+$color2: salmon;
+$bgcolor1: #f8f7f3;
+$bgcolor2: #edece6;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  background: #f8f7f3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  position: relative;
+  min-height: 80vh;
+}

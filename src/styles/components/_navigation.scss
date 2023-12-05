@@ -1,0 +1,59 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: $bgcolor1;
+  align-items: center;
+  padding: 10px 50px;
+  position: relative;
+  h1 {
+    font-size: 1.3rem;
+    color: $color2;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+  }
+}
+
+.nav-active {
+  color: black;
+}
+
+ul:hover li:hover {
+  color: $color1;
+}
+
+.nav-portfolio {
+  display: block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+
+  &:hover .nav-projects,
+  .nav-projects:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-10px, 0px);
+
+    li {
+      color: black;
+    }
+  }
+}
+
+.nav-projects {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  visibility: hidden;
+  padding: 10px;
+  background-color: $bgcolor2;
+  text-align: left;
+  width: 80px;
+  transform: translate(-10px, -310px);
+  transition: 0.4s ease-in-out;
+}

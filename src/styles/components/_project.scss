@@ -1,0 +1,72 @@
+.head-container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 70vh;
+  img {
+    height: 700px;
+    width: 80%;
+    z-index: -2;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+  }
+  .title-ctn {
+    position: absolute;
+    bottom: 0;
+    padding: 0 50px;
+    background: $bgcolor2;
+    border-radius: 0px 0 0 0;
+    width: 40%;
+    margin: 0% 10%;
+    height: 100px;
+    text-align: left;
+
+    h2 {
+      color: $color2;
+      font-size: 3rem;
+    }
+  }
+}
+.infos-site {
+  width: 40%;
+  background: $bgcolor2;
+  min-height: 200px;
+  margin: -16px 10% 0 10%;
+  padding: 0 50px 20px;
+  position: relative;
+  margin-bottom: 30px;
+  .languages {
+    display: flex;
+    gap: 20px;
+    padding: 0 0;
+    color: $color-txt;
+  }
+}
+
+.button-container {
+  position: absolute;
+  background: $color1;
+  max-width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: -15px;
+  right: 10px;
+}
+
+.button-git {
+  position: absolute;
+  background: $bgcolor2;
+  text-align: center;
+  border-radius: 50%;
+  bottom: -25px;
+  right: 150px;
+
+  .fa-github {
+    border-radius: 50%;
+    font-size: 3rem;
+    color: $color1;
+  }
+}

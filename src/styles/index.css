@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  background: #f8f7f3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  position: relative;
+  min-height: 80vh;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #f8f7f3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 50px;
+  position: relative;
+}
+.navigation h1 {
+  font-size: 1.3rem;
+  color: salmon;
+}
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 300;
+}
+
+.nav-active {
+  color: black;
+}
+
+ul:hover li:hover {
+  color: #48aaad;
+}
+
+.nav-portfolio {
+  display: block;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav-portfolio:hover .nav-projects,
+.nav-portfolio .nav-projects:hover {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-10px, 0px);
+          transform: translate(-10px, 0px);
+}
+.nav-portfolio:hover .nav-projects li,
+.nav-portfolio .nav-projects:hover li {
+  color: black;
+}
+
+.nav-projects {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  visibility: hidden;
+  padding: 10px;
+  background-color: #edece6;
+  text-align: left;
+  width: 80px;
+  -webkit-transform: translate(-10px, -310px);
+          transform: translate(-10px, -310px);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+}
+
+a,
+div {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  max-width: 250px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/*
+         * Just a quick hamburger
+         */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+/*
+         * Transform all the slices of hamburger
+         * into a crossmark.
+         */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+         * But let's hide the middle one.
+         */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+         * Ohyeah and the last one should go the other direction
+         */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+         * Make this absolute positioned
+         * at the top left of the screen
+         */
+#menu {
+  position: absolute;
+  width: 250px;
+  max-width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  height: 100vh;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+/*
+         * And let's slide it in from the left
+         */
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.onclick-menu {
+  cursor: pointer;
+}
+
+/* Menu apparant */
+.slide {
+  clear: both;
+  padding: 0 0;
+  height: 0px;
+  overflow: hidden;
+  text-align: left;
+  -webkit-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: 200px;
+}
+#touch:checked + .slide li {
+  padding: 5px 0;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: salmon;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+}
+
+.off {
+  display: none;
+}
+
+.head-container {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 70vh;
+}
+.head-container img {
+  height: 700px;
+  width: 80%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin: 0 auto;
+}
+.head-container .title-ctn {
+  position: absolute;
+  bottom: 0;
+  padding: 0 50px;
+  background: #edece6;
+  border-radius: 0px 0 0 0;
+  width: 40%;
+  margin: 0% 10%;
+  height: 100px;
+  text-align: left;
+}
+.head-container .title-ctn h2 {
+  color: salmon;
+  font-size: 3rem;
+}
+
+.infos-site {
+  width: 40%;
+  background: #edece6;
+  min-height: 200px;
+  margin: -16px 10% 0 10%;
+  padding: 0 50px 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.infos-site .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 0 0;
+  color: #222222;
+}
+
+.button-container {
+  position: absolute;
+  background: #48aaad;
+  max-width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: -15px;
+  right: 10px;
+}
+
+.button-git {
+  position: absolute;
+  background: #edece6;
+  text-align: center;
+  border-radius: 50%;
+  bottom: -25px;
+  right: 150px;
+}
+.button-git .fa-github {
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #48aaad;
+}/*# sourceMappingURL=index.css.map */

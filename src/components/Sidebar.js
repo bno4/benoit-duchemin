@@ -1,12 +1,17 @@
-import React from "react";
+// import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+  // const [color, setColor] = useState("#232323");
+  // const handleClick = (color) => {
+  //   setColor(color);
+  // };
+
   return (
     <div>
       <nav role="navigation">
         <div id="menuToggle">
-          <input type="checkbox" />
+          <input type="checkbox" onClick={() => {}} />
 
           <span></span>
           <span></span>

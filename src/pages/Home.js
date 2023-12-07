@@ -1,13 +1,16 @@
 import React from "react";
-// import Header from "../components/Header";
 import Buttons from "../components/Buttons";
 import Sidebar from "../components/Sidebar";
+import DynamicText from "../components/DynamicText";
+import Logo from "../components/Logo";
 
 const Home = () => {
   return (
     <main>
+      <Logo />
       <Sidebar />
       <Buttons right="/projet-1" />
+      <DynamicText />
     </main>
   );
 };

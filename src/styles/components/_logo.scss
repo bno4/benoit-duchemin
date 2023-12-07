@@ -1,0 +1,42 @@
+.logo {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: $bgcolor2;
+
+  //   h1 {
+  //     font-weight: 300;
+  //     font-size: 1.3rem;
+  //     line-height: 15px;
+  //   }
+  //   h2 {
+  //     font-weight: 200;
+  //     font-size: 1rem;
+  //     line-height: 15px;
+  //   }
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__bar {
+      height: 45px;
+      width: 2px;
+      background: $color2;
+      margin-right: 20px;
+    }
+    &__txt {
+      color: $bgcolor2;
+
+      h1 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 15px;
+      }
+      h2 {
+        font-weight: 200;
+        font-size: 1rem;
+        line-height: 15px;
+      }
+    }
+  }
+}

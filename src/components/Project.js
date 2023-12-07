@@ -5,7 +5,7 @@ const Project = ({ projectNumber }) => {
   const [currentProject] = useState(projectsData[projectNumber]);
   console.log(projectsData[0]);
   return (
-    <div>
+    <div className="project-container">
       <div className="head-container">
         <img src={currentProject.img} alt={currentProject.title} />
         <div className="title-ctn">

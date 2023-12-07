@@ -3,15 +3,15 @@ import Project from "../components/Project";
 import Buttons from "../components/Buttons";
 import Sidebar from "../components/Sidebar";
 
-const Projet5 = () => {
+const Projet6 = () => {
   return (
     <main>
       <Sidebar />
-      <Project projectNumber={4} />
-      <Buttons left={"/projet-4"} />
-      <Buttons right={"/projet-6"} />
+      <Project projectNumber={5} />
+      <Buttons left={"/projet-5"} />
+      <Buttons right={"/contact"} />
     </main>
   );
 };
 
-export default Projet5;
+export default Projet6;

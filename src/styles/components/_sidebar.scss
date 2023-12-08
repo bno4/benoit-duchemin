@@ -7,7 +7,7 @@ div {
 
 a:hover,
 label:hover {
-  color: tomato;
+  color: $color2;
   cursor: pointer;
 }
 
@@ -17,7 +17,7 @@ label:hover {
   top: 50px;
   left: 50px;
   max-width: 250px;
-  z-index: 1;
+  z-index: 10;
 
   -webkit-user-select: none;
   user-select: none;

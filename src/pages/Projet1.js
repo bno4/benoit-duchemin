@@ -9,9 +9,11 @@ const Projet1 = () => {
     <main>
       <Logo />
       <Sidebar />
-      <Project projectNumber={0} />
       <Buttons left={"/"} />
       <Buttons right={"/projet-2"} />
+      <div className="overlay">
+        <Project projectNumber={0} />
+      </div>
     </main>
   );
 };

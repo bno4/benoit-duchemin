@@ -7,12 +7,14 @@
   top: 50%;
   transform: translateY(-50%);
   left: 20px;
+  z-index: 1;
 }
 .right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
+  z-index: 1;
 }
 
 .off {

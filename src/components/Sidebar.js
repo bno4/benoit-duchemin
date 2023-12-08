@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const [toggle, setToggle] = useState("#202020");
+  const [toggle, setToggle] = useState(0.3);
 
   const makeBlur = () => {
-    if (toggle === "#232323") {
-      setToggle("#202020");
+    if (toggle === 0.3) {
+      setToggle(1);
     } else {
-      setToggle("#232323");
+      setToggle(0.3);
     }
-    document.body.style.background = toggle;
+    document.querySelector(".overlay").style.opacity = toggle;
   };
   return (
     <div>

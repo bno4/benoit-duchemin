@@ -9,7 +9,9 @@ const Projet6 = () => {
     <main>
       <Logo />
       <Sidebar />
-      <Project projectNumber={5} />
+      <div className="overlay">
+        <Project projectNumber={5} />
+      </div>
       <Buttons left={"/projet-5"} />
       <Buttons right={"/contact"} />
     </main>

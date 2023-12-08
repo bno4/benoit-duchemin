@@ -1,17 +1,22 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  // const [color, setColor] = useState("#232323");
-  // const handleClick = (color) => {
-  //   setColor(color);
-  // };
+  const [toggle, setToggle] = useState("#202020");
 
+  const makeBlur = () => {
+    if (toggle === "#232323") {
+      setToggle("#202020");
+    } else {
+      setToggle("#232323");
+    }
+    document.body.style.background = toggle;
+  };
   return (
     <div>
       <nav role="navigation">
         <div id="menuToggle">
-          <input type="checkbox" onClick={() => {}} />
+          <input type="checkbox" onClick={makeBlur} />
 
           <span></span>
           <span></span>

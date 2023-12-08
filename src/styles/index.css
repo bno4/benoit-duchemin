@@ -8,7 +8,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  background: #f8f7f3;
+  background: #232323;
 }
 
 a {
@@ -25,13 +25,6 @@ main {
   height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #232323;
-  color: #cdcdcd;
-}
-
 a,
 div {
   text-decoration: none;
@@ -40,8 +33,10 @@ div {
   transition: color 0.3s ease;
 }
 
-a:hover {
+a:hover,
+label:hover {
   color: tomato;
+  cursor: pointer;
 }
 
 #menuToggle {

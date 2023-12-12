@@ -3,7 +3,7 @@ import { projectsData } from "../data/projectsData";
 
 const Project = ({ projectNumber }) => {
   const [currentProject] = useState(projectsData[projectNumber]);
-  console.log(projectsData[0]);
+  // console.log(projectsData[0]);
   return (
     <div className="project-container">
       <div className="head-container">

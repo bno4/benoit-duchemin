@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   const [toggle, setToggle] = useState(0.3);
+  const mainContent = document.querySelector("main");
+  console.log(mainContent);
 
   const makeBlur = () => {
     if (toggle === 0.3) {
@@ -12,6 +14,7 @@ const Sidebar = () => {
     }
     document.querySelector(".overlay").style.opacity = toggle;
   };
+
   return (
     <div>
       <nav role="navigation">
@@ -35,16 +38,22 @@ const Sidebar = () => {
                 <input type="checkbox" id="touch" />
                 <ul className="slide">
                   <NavLink to="/projet-1">
-                    <li>Kasa *React</li>
+                    <li>Kasa (React)</li>
                   </NavLink>
                   <NavLink to="/projet-2">
-                    <li>Kanap *Vanilla JS</li>
+                    <li>Kanap (javaScript)</li>
                   </NavLink>
                   <NavLink to="/projet-3">
-                    <li>OhMyFood *Sass</li>
+                    <li>OhMyFood (Sass)</li>
                   </NavLink>
                   <NavLink to="/projet-4">
-                    <li>La Panthère *SEO</li>
+                    <li>Piiquantes (Node)</li>
+                  </NavLink>
+                  <NavLink to="/projet-5">
+                    <li>La Panthère (SEO)</li>
+                  </NavLink>
+                  <NavLink to="/projet-6">
+                    <li>CineMap (React)</li>
                   </NavLink>
                 </ul>
               </nav>

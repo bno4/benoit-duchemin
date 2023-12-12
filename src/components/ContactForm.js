@@ -20,10 +20,10 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           form.current.reset(); //remet à 0 tous les inputs
-          formMess.innerHTML = "<p className='success'>Message envoyé !</p>";
+          formMess.innerHTML = `<p className="success">Message envoyé !</p>`;
           setTimeout(() => {
             formMess.innerHTML = "";
-          }, 2500);
+          }, 3500);
         },
         (error) => {
           console.log(error.text);
@@ -31,7 +31,7 @@ const ContactForm = () => {
             "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>";
           setTimeout(() => {
             formMess.innerHTML = "";
-          }, 2500);
+          }, 3500);
         }
       );
   };

@@ -3,7 +3,7 @@
   src: url(../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
-$color-txt: #222222;
+$color-txt: #232323;
 $color1: #37b8c8;
 $color2: #c84737;
 $bgcolor1: #f8f7f3;
@@ -14,7 +14,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  background: #232323;
+  background: $color-txt;
 }
 
 a {
@@ -29,4 +29,16 @@ ul {
 main {
   position: relative;
   height: 100vh;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #232323;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
 }

@@ -1,0 +1,19 @@
+.social-network {
+  right: 1rem;
+  top: 0;
+  font-size: 1.2rem;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      padding: 1rem;
+      transition: 1.1s ease-out;
+      color: $color1;
+      &:hover {
+        color: $color2;
+      }
+    }
+  }
+}

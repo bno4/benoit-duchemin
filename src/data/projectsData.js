@@ -49,7 +49,7 @@ export const projectsData = [
     date: "Février 2023",
     languages: ["SEO", "Css", "Html"],
     infos:
-      "Site factice d'agence web optimisé pour le référencement et l'accessibilité (SEO). Le site originel est livré par OpenClassrooms. Optimisations apportées au niveau du Html et Css (meta description, ajusement des contrastes, site responsive, réduction du poids des photos, etc.). D'après PageSpeed Insights, le site atteint 99% en performances (94% sur mobile), 100 % sur l'accessibilité, 100% sur le SEO et 100% pour les bonnes pratiques",
+      "Site d'agence web optimisé pour le référencement et l'accessibilité (SEO). D'après PageSpeed Insights, le site atteint 99% en performances (94% sur mobile), 100 % sur l'accessibilité, 100% sur le SEO et 100% pour les bonnes pratiques",
     img: "./assets/img/lapanthere_home.webp",
     link: "https://bno4.github.io/la-panthere",
   },
@@ -59,7 +59,7 @@ export const projectsData = [
     date: "Novembre 2023",
     languages: ["React", "Sass"],
     infos:
-      "Fetch de l'API gratuite de films TMDB. Mini site de recheche de films et possibilité de les ajouter aux favoris ou de les supprimer",
+      "Fetch de l'API gratuite de films TMDB. Mini site de recherche de films et possibilité de les ajouter aux favoris ou de les supprimer",
     img: "./assets/img/cinemap_home.webp",
     link: "https://bno4.github.io/movies/",
   },

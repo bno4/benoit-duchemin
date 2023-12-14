@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../components/Project";
 import Buttons from "../components/Buttons";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 const Projet6 = () => {
   return (
@@ -12,6 +13,7 @@ const Projet6 = () => {
       </div>
       <Buttons left={"/projet-5"} />
       <Buttons right={"/contact"} />
+      <Footer />
     </main>
   );
 };

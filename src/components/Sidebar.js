@@ -31,7 +31,7 @@ const Sidebar = () => {
             </NavLink>
 
             <li>
-              <nav>
+              <div>
                 <label htmlFor="touch">
                   <p>Portfolio</p>
                 </label>
@@ -56,7 +56,7 @@ const Sidebar = () => {
                     <li>CineMap (React)</li>
                   </NavLink>
                 </ul>
-              </nav>
+              </div>
             </li>
 
             <NavLink to="/contact">

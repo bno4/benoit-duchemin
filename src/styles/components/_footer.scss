@@ -1,0 +1,12 @@
+.footer--pin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin-top: 10vh;
+  background: black;
+  z-index: 1;
+  padding: 10px 30px;
+}

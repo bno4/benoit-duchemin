@@ -1,48 +1,59 @@
 .project-container {
-  height: 100vh;
+  margin-bottom: 50px;
+  min-height: 100vh;
 }
-
 .head-container {
-  margin-top: 130px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+  width: 100%;
   height: 70vh;
   img {
     height: 700px;
-    width: 80%;
+    width: 100%;
     z-index: 1;
     object-fit: cover;
     object-position: top;
-    margin: 0 auto;
   }
   .title-ctn {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    left: 0;
     bottom: 0;
-    padding: 0 50px;
-    background: $bgcolor2;
-    border-radius: 0px 0 0 0;
-    width: 40%;
-    margin: 0% 10%;
-    height: 100px;
-    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    background: rgb(35, 35, 35);
+    background: linear-gradient(
+      90deg,
+      rgba(35, 35, 35, 1) 0%,
+      rgba(35, 35, 35, 0) 100%
+    );
     z-index: 1;
 
     h2 {
-      color: $color2;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $bgcolor1;
+      opacity: 1;
       font-size: 3rem;
+      @media screen and (max-width: 720px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 .infos-site {
-  width: 40%;
-  background: $bgcolor2;
-  min-height: 200px;
-  margin: -16px 10% 0 10%;
-  padding: 0 50px 20px;
+  background: $color-txt;
+  padding: 20px 30px;
   position: relative;
-  margin-bottom: 30px;
-  z-index: 2;
+  color: $bgcolor1;
   .languages {
     display: flex;
     gap: 20px;
@@ -51,8 +62,14 @@
   }
 }
 
+.extern-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .button-container {
-  position: absolute;
   background: $color1;
   max-width: 100px;
   text-align: center;
@@ -60,19 +77,28 @@
   border-radius: 5px;
   bottom: -15px;
   right: 10px;
+  transition: all 0.3s ease-in-out;
+
+  span {
+    color: $bgcolor1;
+  }
+  &:hover {
+    background: $color2;
+  }
 }
 
 .button-git {
-  position: absolute;
   background: $bgcolor2;
-  text-align: center;
+  text-align: right;
   border-radius: 50%;
-  bottom: -25px;
-  right: 150px;
 
   .fa-github {
     border-radius: 50%;
     font-size: 3rem;
     color: $color1;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $color2;
+    }
   }
 }

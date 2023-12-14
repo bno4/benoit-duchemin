@@ -1,17 +1,33 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
+import { motion, easeInOut } from "framer-motion";
 
 const Project = ({ projectNumber }) => {
   const [currentProject] = useState(projectsData[projectNumber]);
-  // console.log(projectsData[0]);
+
   return (
     <div className="project-container">
-      <div className="head-container">
+      <motion.div
+        className="head-container"
+        initial={{ opacity: 0.5, x: 300 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        exit={{ opacity: 0, x: -300 }}
+        transition={{ duration: 0.5, ease: easeInOut }}
+      >
         <img src={currentProject.img} alt={currentProject.title} />
-        <div className="title-ctn">
+        <motion.div
+          className="title-ctn"
+          initial={{ opacity: 0.5, scaleX: 0, originX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          exit={{ scaleX: 0 }}
+          transition={{ duration: 0.5, ease: easeInOut }}
+        >
           <h2>{currentProject.title}</h2>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="infos-site">
         <p>{currentProject.date}</p>
@@ -22,34 +38,38 @@ const Project = ({ projectNumber }) => {
             })}
         </ul>
         <p>{currentProject.infos}</p>
-
-        <div
-          className={
-            currentProject.link.length > 1 ? "button-container" : "off"
-          }
-        >
-          <a
-            href={currentProject.link}
-            target="_blank"
-            rel="noreferrer"
-            className="hover"
+        <div className="extern-links">
+          {" "}
+          <div
+            className={
+              currentProject.link.length > 1 ? "button-container" : "off"
+            }
           >
-            <span className={currentProject.link.length > 1 ? "button" : "off"}>
-              Voir le site
-            </span>
-          </a>
-        </div>
-        <div className="button-git">
-          <a
-            href={currentProject.git}
-            target="_blank"
-            rel="noreferrer"
-            className="hover"
-          >
-            <span className="button">
-              <i className="fa-brands fa-github"></i>
-            </span>
-          </a>
+            <a
+              href={currentProject.link}
+              target="_blank"
+              rel="noreferrer"
+              className="hover"
+            >
+              <span
+                className={currentProject.link.length > 1 ? "button" : "off"}
+              >
+                Voir le site
+              </span>
+            </a>
+          </div>
+          <div className="button-git">
+            <a
+              href={currentProject.git}
+              target="_blank"
+              rel="noreferrer"
+              className="hover"
+            >
+              <span className="button">
+                <i className="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

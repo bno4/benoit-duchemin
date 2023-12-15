@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "//bno4.github.io/benoit-duchemin/static/css/main.dbbf9227.css",
+    "main.js": "//bno4.github.io/benoit-duchemin/static/js/main.15e4db27.js",
+    "static/media/Rubik-VariableFont_wght.ttf": "//bno4.github.io/benoit-duchemin/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
+    "index.html": "//bno4.github.io/benoit-duchemin/index.html",
+    "main.dbbf9227.css.map": "//bno4.github.io/benoit-duchemin/static/css/main.dbbf9227.css.map",
+    "main.15e4db27.js.map": "//bno4.github.io/benoit-duchemin/static/js/main.15e4db27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbbf9227.css",
+    "static/js/main.15e4db27.js"
+  ]
+}

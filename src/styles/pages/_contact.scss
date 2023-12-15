@@ -1,7 +1,7 @@
 .contact {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   .form-container {
     margin: 145px auto;

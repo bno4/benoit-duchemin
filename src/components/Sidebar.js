@@ -38,22 +38,22 @@ const Sidebar = () => {
                 <input type="checkbox" id="touch" />
                 <ul className="slide">
                   <NavLink to="/projet-1">
-                    <li>Kasa (React)</li>
+                    <li>Kasa - React</li>
                   </NavLink>
                   <NavLink to="/projet-2">
-                    <li>Kanap (javaScript)</li>
+                    <li>Kanap - JavaScript</li>
                   </NavLink>
                   <NavLink to="/projet-3">
-                    <li>OhMyFood (Sass)</li>
+                    <li>OhMyFood - Sass</li>
                   </NavLink>
                   <NavLink to="/projet-4">
-                    <li>Piiquantes (Node)</li>
+                    <li>Piiquantes - Node</li>
                   </NavLink>
                   <NavLink to="/projet-5">
-                    <li>La Panthère (SEO)</li>
+                    <li>La Panthère - SEO</li>
                   </NavLink>
                   <NavLink to="/projet-6">
-                    <li>CineMap (React)</li>
+                    <li>CineMap - React</li>
                   </NavLink>
                 </ul>
               </div>

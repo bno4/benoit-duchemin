@@ -8,23 +8,24 @@ const DynamicText = () => {
         <TypeAnimation
           style={{
             whiteSpace: "pre-line",
-            height: "auto",
+            height: "500px",
             display: "block",
             width: "320px",
             lineHeight: "25px",
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             color: "$bgcolor2",
           }}
           sequence={[
             `Bienvenue sur mon site ! 
           
-          Je suis développeur web, diplômé depuis juillet 2023.\nAprès un premier parcours pro très riche en tant que responsable de diffusion dans le secteur culturel, j’ai décidé de vivre de ma passion...
-          
-          J'ai suivi une formation de développeur web à plein temps pendant six mois. À cette heure, je suis plus orienté sur le front-end avec JavaScript, Sass/CSS, React. \n Je développe aussi des compétences sur la partie backend, avec Node.js, Express et MongoDB. 
+          Je suis développeur web, diplômé depuis 2023.\n
+          Je m'intéresse essentiellement aux technologies du front-end :\n React, JavaScript, Sass, CSS,
+          et continue de me former côté back-end avec Node, MongoDB, Express.
 
-          Je vous invite à naviguer sur ces pages pour retrouver mes réalisations. Je suis pleinement disponible pour échanger autour de vos projets.
+          Je reste à l'écoute en page "contact" pour échanger autour de vos projets. 
 
           Bonne visite !
+   
 
           `, // actual line-break inside string literal also gets animated in new line, but ensure there are no leading spaces
             500,

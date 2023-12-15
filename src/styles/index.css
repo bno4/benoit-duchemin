@@ -21,12 +21,18 @@ ul {
 }
 
 main {
-  position: relative;
-  height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .overlay {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   top: 0;
   left: 0;
@@ -38,9 +44,14 @@ main {
 }
 
 .contact {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
 }
 .contact .form-container {
   margin: 145px auto;
@@ -351,7 +362,12 @@ label:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 20px;
-  z-index: 1;
+  z-index: 2;
+}
+@media screen and (max-width: 720px) {
+  .left {
+    left: 10px;
+  }
 }
 
 .right {
@@ -360,7 +376,12 @@ label:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 20px;
-  z-index: 1;
+  z-index: 2;
+}
+@media screen and (max-width: 720px) {
+  .right {
+    right: 10px;
+  }
 }
 
 .off {
@@ -368,7 +389,6 @@ label:hover {
 }
 
 .project-container {
-  margin-bottom: 50px;
   min-height: 100vh;
 }
 
@@ -414,7 +434,7 @@ label:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  padding: 10px 0px;
+  padding: 20px 0px;
   background: rgb(35, 35, 35);
   background: -webkit-gradient(linear, left top, right top, from(rgb(35, 35, 35)), to(rgba(35, 35, 35, 0)));
   background: linear-gradient(90deg, rgb(35, 35, 35) 0%, rgba(35, 35, 35, 0) 100%);
@@ -436,18 +456,23 @@ label:hover {
 }
 
 .infos-site {
-  background: #232323;
+  background: #f8f7f3;
   padding: 20px 30px;
   position: relative;
-  color: #f8f7f3;
+  color: #232323;
 }
 .infos-site .languages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  padding: 0 0;
-  color: #232323;
+  padding: 0;
+  color: #f8f7f3;
+}
+.infos-site .languages li {
+  background: #37b8c8;
+  padding: 5px 10px;
+  border-radius: 7px;
 }
 
 .extern-links {
@@ -488,25 +513,13 @@ label:hover {
 }
 .button-git .fa-github {
   border-radius: 50%;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #37b8c8;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .button-git .fa-github:hover {
   color: #c84737;
-}
-
-.overlay {
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: #232323;
-  opacity: 1;
-  -webkit-transition: opacity 250ms ease-in-out;
-  transition: opacity 250ms ease-in-out;
 }
 
 .dynamic-text {
@@ -527,6 +540,7 @@ label:hover {
   color: #edece6;
   width: 50%;
   margin: 130px auto;
+  min-height: 80vh;
 }
 
 .form {
@@ -559,13 +573,13 @@ label:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  margin-top: 10vh;
-  background: black;
+  margin-top: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  background: #232323;
   z-index: 1;
-  padding: 10px 30px;
+  padding: 10px 0px;
+  color: #edece6;
 }
 
 .social-network {

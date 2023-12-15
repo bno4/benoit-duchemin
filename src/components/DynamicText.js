@@ -10,9 +10,9 @@ const DynamicText = () => {
             whiteSpace: "pre-line",
             height: "500px",
             display: "block",
-            width: "320px",
+            width: "300px",
             lineHeight: "25px",
-            fontSize: "1.5rem",
+            fontSize: "1.1rem",
             color: "$bgcolor2",
           }}
           sequence={[

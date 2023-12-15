@@ -59,6 +59,11 @@ main {
   position: relative;
   max-width: 700px;
 }
+@media screen and (max-width: 730px) {
+  .contact .form-container {
+    max-width: 300px;
+  }
+}
 .contact .form-container h2 {
   margin-bottom: 50px;
   color: #edece6;
@@ -162,12 +167,18 @@ label:hover {
   position: relative;
   top: 50px;
   left: 50px;
-  max-width: 250px;
+  max-width: 200px;
   z-index: 10;
   -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
+}
+@media screen and (max-width: 730px) {
+  #menuToggle {
+    left: 20px;
+    top: 40px;
+  }
 }
 
 #menuToggle input {
@@ -247,8 +258,8 @@ label:hover {
          */
 #menu {
   position: absolute;
-  width: 250px;
-  max-width: 250px;
+  width: 200px;
+  max-width: 200px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -304,13 +315,17 @@ label:hover {
 }
 
 #touch:checked + .slide {
-  height: 230px;
+  height: 200px;
   background-color: #c84737;
   padding: 10px 20px;
 }
 #touch:checked + .slide li {
   padding: 5px 0;
   color: #f8f7f3;
+  font-size: 1rem;
+}
+#touch:checked + .slide li:hover {
+  color: #232323;
 }
 
 .logo {
@@ -319,6 +334,12 @@ label:hover {
   right: 50px;
   color: #edece6;
   z-index: 10;
+}
+@media screen and (max-width: 730px) {
+  .logo {
+    top: 20px;
+    right: 20px;
+  }
 }
 .logo__container {
   display: -webkit-box;
@@ -337,6 +358,12 @@ label:hover {
   background: #37b8c8;
   margin-right: 20px;
 }
+@media screen and (max-width: 730px) {
+  .logo__container__bar {
+    height: 40px;
+    margin-right: 15px;
+  }
+}
 .logo__container__txt {
   color: #edece6;
 }
@@ -345,10 +372,20 @@ label:hover {
   font-size: 1.2rem;
   line-height: 15px;
 }
+@media screen and (max-width: 730px) {
+  .logo__container__txt h1 {
+    font-size: 1.1rem;
+  }
+}
 .logo__container__txt h2 {
   font-weight: 200;
   font-size: 1rem;
   line-height: 15px;
+}
+@media screen and (max-width: 730px) {
+  .logo__container__txt h2 {
+    font-size: 0.9rem;
+  }
 }
 
 .fa-solid {
@@ -539,8 +576,8 @@ label:hover {
   margin-top: 125px;
   color: #edece6;
   width: 50%;
+  max-width: 300px;
   margin: 130px auto;
-  min-height: 80vh;
 }
 
 .form {

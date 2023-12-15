@@ -16,11 +16,15 @@ label:hover {
   position: relative;
   top: 50px;
   left: 50px;
-  max-width: 250px;
+  max-width: 200px;
   z-index: 10;
 
   -webkit-user-select: none;
   user-select: none;
+  @media screen and (max-width: 730px) {
+    left: 20px;
+    top: 40px;
+  }
 }
 
 #menuToggle input {
@@ -96,8 +100,8 @@ label:hover {
          */
 #menu {
   position: absolute;
-  width: 250px;
-  max-width: 250px;
+  width: 200px;
+  max-width: 200px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -149,12 +153,16 @@ label:hover {
 }
 
 #touch:checked + .slide {
-  height: 230px;
+  height: 200px;
   background-color: $color2;
   padding: 10px 20px;
 
   li {
     padding: 5px 0;
     color: $bgcolor1;
+    font-size: 1rem;
+    &:hover {
+      color: $color-txt;
+    }
   }
 }

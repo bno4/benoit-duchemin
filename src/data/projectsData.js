@@ -16,7 +16,7 @@ export const projectsData = [
     date: "Mars 2023",
     languages: ["JavaScript"],
     infos:
-      "Création de la partie front d'un site e-commerce en Javascript. L'application permet d'ajouter un produit, sélectionner la couleur et le nombre de produit. Modification possible jusqu'à la confirmation de commande",
+      "Création de la partie front d'un site e-commerce en JavaScript. L'application permet d'ajouter un produit, sélectionner la couleur et le nombre de produits. Modification possible jusqu'à la confirmation de commande. * Site en cours de déploiement. Possibilité d'installer l'application en local depuis le repo Github.",
     img: "./assets/img/kanap_home.webp",
     link: "",
     git: "https://github.com/bno4/kasa",
@@ -38,7 +38,7 @@ export const projectsData = [
     date: "Avril 2023",
     languages: ["Node"],
     infos:
-      "Création du back d'une application de post et notation de sauces piquantes avec Node, Express et MongoDB. Partie Front © OpenClassrooms",
+      "Création du back d'une application de post et notation de sauces piquantes avec Node, Express et MongoDB. Partie Front © OpenClassrooms. * Site en cours de déploiement. Possibilité d'installer l'application en local depuis le repo Github.",
     img: "./assets/img/hottakes_home.webp",
     link: "",
     git: "https://github.com/bno4/piiquante",

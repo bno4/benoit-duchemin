@@ -36,7 +36,7 @@ export const projectsData = [
     id: 4,
     title: "Piiquantes",
     date: "Avril 2023",
-    languages: ["Node"],
+    languages: ["Node", "MongoDB", "Express"],
     infos:
       "Création du back d'une application de post et notation de sauces piquantes avec Node, Express et MongoDB. Partie Front © OpenClassrooms. * Site en cours de déploiement. Possibilité d'installer l'application en local depuis le repo Github.",
     img: "./assets/img/hottakes_home.webp",
@@ -47,7 +47,7 @@ export const projectsData = [
     id: 5,
     title: "La Panthère",
     date: "Février 2023",
-    languages: ["SEO", "Css", "Html"],
+    languages: ["SEO", "CSS", "HTML"],
     infos:
       "Site d'agence web optimisé pour le référencement et l'accessibilité (SEO). D'après PageSpeed Insights, le site atteint 99% en performances (94% sur mobile), 100 % sur l'accessibilité, 100% sur le SEO et 100% pour les bonnes pratiques",
     img: "./assets/img/lapanthere_home.webp",

@@ -23,7 +23,7 @@
         border: 2px $color2 solid;
         border-radius: 50%;
         position: absolute;
-        top: -22px;
+        top: -5px;
         left: 133px;
         z-index: 2;
       }
@@ -92,10 +92,11 @@
 }
 
 .contact-infos {
-  color: $color2;
+  color: $color1;
+  font-size: 0.8rem;
   .fa-solid {
-    font-size: 1rem;
-    color: $bgcolor1;
+    font-size: 0.8rem;
+    color: #999;
     margin-right: 10px;
   }
 }

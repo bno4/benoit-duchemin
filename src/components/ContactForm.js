@@ -55,17 +55,6 @@ const ContactForm = () => {
         <input type="submit" value="Envoyer" className="hover button" />
       </form>
       <div className="form-message"></div>{" "}
-      <div className="contact-infos">
-        <p>
-          <i class="fa-solid fa-phone"></i> +33 (0)6 30 53 32 89
-        </p>
-        <p>
-          <i class="fa-solid fa-envelope"></i> bnduchemin[at]gmail.com
-        </p>
-        <p>
-          <i class="fa-solid fa-location-dot"></i> Lyon
-        </p>
-      </div>
     </div>
   );
 };

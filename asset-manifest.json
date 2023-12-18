@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "//bno4.github.io/benoit-duchemin/static/css/main.109c4128.css",
-    "main.js": "//bno4.github.io/benoit-duchemin/static/js/main.1ef1e125.js",
+    "main.js": "//bno4.github.io/benoit-duchemin/static/js/main.7d0d1a66.js",
     "static/media/Rubik-VariableFont_wght.ttf": "//bno4.github.io/benoit-duchemin/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
     "index.html": "//bno4.github.io/benoit-duchemin/index.html",
     "main.109c4128.css.map": "//bno4.github.io/benoit-duchemin/static/css/main.109c4128.css.map",
-    "main.1ef1e125.js.map": "//bno4.github.io/benoit-duchemin/static/js/main.1ef1e125.js.map"
+    "main.7d0d1a66.js.map": "//bno4.github.io/benoit-duchemin/static/js/main.7d0d1a66.js.map"
   },
   "entrypoints": [
     "static/css/main.109c4128.css",
-    "static/js/main.1ef1e125.js"
+    "static/js/main.7d0d1a66.js"
   ]
 }
